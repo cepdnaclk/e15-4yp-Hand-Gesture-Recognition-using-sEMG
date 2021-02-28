@@ -1,4 +1,4 @@
-# eYY-4yp-project-template
+# eYY-4yp-Hand-Gesture-Recognition-using-sEMG
 
 This is a sample repository you can use for your Final Year Research project.
 
