@@ -1,26 +1,26 @@
 {
-   "title":"This is the title of the project",
+   "title":"Hand Gesture Recognition using sEMG",
    "team":[
       {
-         "name":"Team Member Name 1",
-         "email":"email@eng.pdn.ac.lk",
-         "eNumber":"E/yy/xxx",
+         "name":"Yasiru Bhagya",
+         "email":"yasirubhagya@eng.pdn.ac.lk",
+         "eNumber":"E/15/043",
          "github_profile":"#",
          "linkedin_profile":"#",
          "researchgate_profile":"#"
       },
       {
-         "name":"Team Member Name 2",
-         "email":"email@eng.pdn.ac.lk",
-         "eNumber":"E/yy/xxx",
+         "name":"Hisni Mohammed",
+         "email":"hisnimohammed@eng.pdn.ac.lk",
+         "eNumber":"E/15/131",
          "github_profile":"#",
          "linkedin_profile":"#",
          "researchgate_profile":"#"
       },
       {
-         "name":"Team Member Name 3",
-         "email":"email@eng.pdn.ac.lk",
-         "eNumber":"E/yy/xxx",
+         "name":"Suhail Sajahan",
+         "email":"suhailsajahan@eng.pdn.ac.lk",
+         "eNumber":"E/15/348",
          "github_profile":"#",
          "linkedin_profile":"#",
          "researchgate_profile":"#"
@@ -28,14 +28,14 @@
    ],
    "supervisors":[
       {
-         "name":"Dr. Supervisor 1",
-         "email":"email@eng.pdn.ac.lk",
+         "name":"Dr. Isuru Nawinne",
+         "email":"isurunawinne@eng.pdn.ac.lk",
          "linkedin_profile":"",
          "researchgate_profile":""
       },
       {
-         "name":"Supervisor 2",
-         "email":"email@eng.pdn.ac.lk",
+         "name":"Prof. Roshan Ragel",
+         "email":"roshanr@eng.pdn.ac.lk",
          "linkedin_profile":"",
          "researchgate_profile":""
       }
