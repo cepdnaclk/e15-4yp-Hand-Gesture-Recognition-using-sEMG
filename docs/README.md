@@ -9,7 +9,7 @@ title:
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
-# Hand Gesture Recognition using sEMG
+# Improved Gesture Recognition for sEMG based Human Machine Interface
 
 #### Team
 
