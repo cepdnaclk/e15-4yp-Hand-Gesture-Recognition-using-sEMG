@@ -74,8 +74,19 @@ Other time domain features mean absolute value (MAV), wave-length (WL), variance
 
 To find Mel-frequency cepstral coefficients (MFCC), the mfcc function from the librosa python library is used. While calculating these features sliding windows size of 2048 and hop length size of 1024 is used. These extracted features were grouped into four separate sets and fed into classifiers separately. The first feature set consists of root mean square, mean frequency, and median frequency. The feature sets II and III were based on previous studies. The second feature set is based on the suggestion made by Hudgins et al. [18] which consists of features mean absolute value, wave-length, zero-crossing, slope sign change. The third feature set consists of integral absolute value, variance, wave-length, zero-crossing, slope sign change, and Willison amplitude was proposed by Du et al. [19]. Finally, feature set IV is made up of MFCC data. Moreover, both preprocessed data and MFCC data were used to train the neural network models.
 
-## Experiment Setup and Implementation
-### Signal Acquisition Device
+### 3.4. Classification
+Classic machine learning classifier models and deep learning were used to identify eight gestures: idle, fist, flexion, extension, pinching with thumb and index finger, pinching with thumb and middle finger, pinching with thumb and ring finger, and pinching with thumb and small finger. Classic machine learning models used are k-nearest neighbors (k-NN), random forest (RF), support vector machine (SVM), and linear discriminant analysis (LDA). Two sets of data, one with features extracted from all 24 channels data and another with features extracted from 8 channel data were fed into these classifiers.
+
+The grid search algorithm [20] is used for optimizing parameters for classifier models. To evaluate the classifier models, 10-Fold cross-validation was used. All of the classic machine learning algorithms, the grid search algorithm, and cross-validation used were taken from Python scikit-learn API [20].
+Furthermore, we experimented with two types of neural networks, the long-short-term memory (LSTM) model and the LSTM with convolutional neural network (CNN) model. Extracted MFCC data was fed to the neural network. Neural networks were implemented using TensorFlow with Keras in python language. The first model is a basic model with two LSTM layers and one dense layer to output each class. Here class labels were one-hot encoded and categorical cross-entropy was used as the error function. Figure 3.4 shows more details about the LSTM model. Figure 3.5 shows LSTM-CNN model parameters.
+
+<img src="images/fig3_4.JPG" width="500">
+
+<img src="images/fig3_5.JPG" width="500">
+
+
+## 4. Experiment Setup and Implementation
+### 4.1. Signal Acquisition Device
 Our device is inspired by the Backyard Brains’ Muscle SpikerShield device. Muscle SpikerShield has 6 channels of sEMG signal acquisition capability. To use it we have to connect it to an Arduino board. On the other hand, our device has 8 channels, a dedicated 8 channel ADC and a powerful STM32F103 microcontroller. Figure 3.6 shows the high-level view of our device and Figure 3.7 shows the circuit diagram for a single channel. Figure 3.8 and Figure 3.9 Illustrates the printed circuit board (PCB) layout of our device. Figure 3.10 shows our final signal acquisition device and Figure 3.11 shows the the 8 channel electrode band.
 
 <img src="images/fig3_6.JPG" width="600">
@@ -91,13 +102,13 @@ Our device is inspired by the Backyard Brains’ Muscle SpikerShield device. Mus
 <img src="images/fig3_11.JPG" width="500">
 
 
-### The Game
+### 4.2. The Game
 A game similar to the space invader game has been created to demonstrate the project. The device will recognize the gesture, then the gesture will be classified through the machine learning algorithms and then the movement of the spaceship can be changed according to the assigned gesture for each movement. The game has been created using the Pygame library, which is a python library mostly used to build games. To make the game interesting, we have created the game with an environment that is similar to the current pandemic situation. The covid19 viruses come towards the earth and the player has to protect the earth from the virus by shooting it from the spaceship. The spaceship can be moved in all 8 directions using the arrow keys and it can fire using the space key. If the covid19 virus reaches the earth or comes near to the spaceship then the game will be ended. Figure 3.12 shows the interface of our game.
 
 <img src="images/fig3_12.JPG" width="500">
 
 
-### Real-Time Controlling
+### 4.3. Real-Time Controlling
 An attempt was made to control the game using the 8 channel signal acquisition device
 developed by us. The first signal acquired by the device was filtered using 5th order
 bandpass filter of range 20 and 700 Hz. Then root mean square, mean frequency, and
@@ -108,7 +119,7 @@ testing.
 <img src="images/fig3_13.JPG" width="500">
 
 
-## Results and Analysis
+## 5. Results and Analysis
 Feature Set I: root mean square, mean frequency, median frequency
 Feature Set II: mean absolute value, wave-length, zero-crossing, slope sign change.
 Feature Set III: integral absolute value, variance, wave-length, zero-crossing, slope sign change, and Willison amplitude
@@ -154,7 +165,7 @@ Few researchers have worked on the putEMG dataset for different sEMG application
 
 
 
-## Conclusion
+## 6. Conclusion
 The objective of this research was to find a hand gestures recognition model that could be useful to interact with machine interfaces using sEMG signals. If we consider results obtained for 24 channel data, the difference in classification accuracies achieved by LDA and SVM are insignificant for feature set I. From precision and recall results also suggest that both LDA and SVM classifiers have similar results. If we consider results obtained for 8 channel data, the SVM classifier with the feature set I performed better. Precision and recall results also suggest that the SVM classifier gives a better result. In both cases, pinching gestures were not accurately classified compared to other gestures: idle, fist, flexion, and extension gestures. Therefore, a system that utilizes a support vector machine classifier with root mean square, mean frequency, and median frequency as features could be adopted to implement an end-user human-machine interface that utilizes limited gestures. This system might not be very useful for classifying pinching gestures as they have lower precision and recall values, and on average they are below 70%.
 sEMG signals characteristic from different muscle groups and characteristics of a single muscle group of different locations have variations. These results obtained depend on the muscle location where signals are acquired and the signal acquisition device used in the experiment. Therefore, when implementing a real-world end-user system these factors also need to be considered.
 
