@@ -58,7 +58,21 @@ putEMG data contains raw sEMG signals directly collected from the muscles theref
 <img src="images/fig3.JPG" width="400">
 
 ### 3.3. Feature Extraction
+For the classification using classic machine learning models, ten features from time, frequency, time-frequency domains were extracted from each channel. They were integral absolute value, mean absolute value, mean frequency, median frequency, root mean square, slope sign change, variance, waveform length, Willison amplitude, zero-crossing, and Mel-frequency cepstral coefficients. In previous works, it is found that these features give higher performance, high insensitivity to window size, and low computational complexity [17].
+Root mean square (RMS) which is a time-domain feature gives insights into the amplitude of the signals. The amplitude of the sEMG signal is related to the contraction level of muscles and muscle force involved during the movements. this feature was calculated as,
 
+<img src="images/fe1.JPG" width="400">
+
+sEMG signal frequencies vary with different muscle movements.  Therefore, frequency domain features such as mean frequency (MNF) and median frequency (MDF) of the signal are also used in the feature vector that is fed into gesture recognition classifiers. These features were calculated as,
+
+<img src="images/fe2.JPG" width="400">
+
+Other time domain features mean absolute value (MAV), wave-length (WL), variance (VAR), slope sign change (SSC), and Willison amplitude (WAMP) were calculated as follows,
+
+<img src="images/fe3.JPG" width="400">
+<img src="images/fe4.JPG" width="400">
+
+To find Mel-frequency cepstral coefficients (MFCC), the mfcc function from the librosa python library is used. While calculating these features sliding windows size of 2048 and hop length size of 1024 is used. These extracted features were grouped into four separate sets and fed into classifiers separately. The first feature set consists of root mean square, mean frequency, and median frequency. The feature sets II and III were based on previous studies. The second feature set is based on the suggestion made by Hudgins et al. [18] which consists of features mean absolute value, wave-length, zero-crossing, slope sign change. The third feature set consists of integral absolute value, variance, wave-length, zero-crossing, slope sign change, and Willison amplitude was proposed by Du et al. [19]. Finally, feature set IV is made up of MFCC data. Moreover, both preprocessed data and MFCC data were used to train the neural network models.
 
 ## Experiment Setup and Implementation
 
