@@ -86,27 +86,27 @@ Classifier models: linear discriminant analysis, k-nearest neighbor, support vec
 
 <img src="images/t1.JPG" width="350">
 
-<img src="images/t2.JPG" width="350">
+<img src="images/t2.JPG" width="500">
 
-<img src="images/t3.JPG" width="350">
+<img src="images/t3.JPG" width="500">
 
-<img src="images/fig8.JPG" width="350">
+<img src="images/fig8.JPG" width="400">
 
-<img src="images/fig9.JPG" width="350">
+<img src="images/fig9.JPG" width="600">
 
-<img src="images/fig10.JPG" width="350">
+<img src="images/fig10.JPG" width="600">
 
 <img src="images/t4.JPG" width="350">
 
-<img src="images/t5.JPG" width="350">
+<img src="images/t5.JPG" width="500">
 
-<img src="images/t6.JPG" width="350">
+<img src="images/t6.JPG" width="500">
 
-<img src="images/fig11.JPG" width="350">
+<img src="images/fig11.JPG" width="400">
 
-<img src="images/fig12.JPG" width="350">
+<img src="images/fig12.JPG" width="600">
 
-<img src="images/fig13.JPG" width="350">
+<img src="images/fig13.JPG" width="600">
 
 
 
@@ -115,7 +115,7 @@ Table 2 and Figure 9 illustrate the precision score for each gesture when differ
 Table 4 and Figure 11 illustrate the classifier results for 8 channel data. For classifying 8 gestures, the highest accuracy of 86.02% was achieved using the SVM classifier with feature set I. LDA model performed better with the feature set III achieving an accuracy of 85.47% and the random forest model also performed better with the feature set III with an accuracy of 85.17%.
 Table 5 and Table 6 illustrate the precision score and recall value respectively for each gesture when different classifiers are used with feature set I and 8 channel data. The same result is graphically illustrated in Figures 12 and 13. Similar to 24 channel data results pinching finger gestures had low precision and recall values compared to the other 4 gestures. Predicting idle, fist, and flexion of hand have the highest recall value when SVM classifier is used while k-nearest neighbor classifier predicts extension of hand more accurately with the recall value of 0.94. For pinching fingers, SVM predicted more accurately with the highest recall values of 0.52, 0.65, and 0.72 for pinch thumb-index, pinch thumb-middle, and pinch thumb-small gestures. 
 
-<img src="images/t7.JPG" width="350">
+<img src="images/t7.JPG" width="450">
 
 Few researchers have worked on the putEMG dataset for different sEMG applications, and Table 6 illustrates the results obtained. Tsinganos et al. [21] have worked on data augmentation methods and with the use of these techniques, they have achieved a maximum testing accuracy of 96.97%. Our results do not match with their results but their research was mainly based on data augmentation techniques that are to create new data from existing data. The performance of machine learning models improves with the amount of data available. This could be the reason that they have achieved higher accuracy. Nacpil et al. [22] have worked on creating a model to control steering wheel for drivers with disabilities and they have achieved a precision score of 96% and 94% for extension and flexion of the hand. We have achieved a precision of 95% for both of these gestures using the SVM classifier with feature set I and also we are classifying eight gestures.
 
