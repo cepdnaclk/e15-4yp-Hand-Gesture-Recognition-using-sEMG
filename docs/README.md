@@ -63,8 +63,19 @@ putEMG data contains raw sEMG signals directly collected from the muscles theref
 ## Experiment Setup and Implementation
 
 ## Results and Analysis
+Feature Set I: root mean square, mean frequency, median frequency
+Feature Set II: mean absolute value, wave-length, zero-crossing, slope sign change.
+Feature Set III: integral absolute value, variance, wave-length, zero-crossing, slope sign change, and Willison amplitude
+Feature Set IV: Mel-frequency cepstral coefficients
+ 
+Classifier models: linear discriminant analysis, k-nearest neighbor, support vector machine, random forest
+
+
 
 ## Conclusion
+The objective of this research was to find a hand gestures recognition model that could be useful to interact with machine interfaces using sEMG signals. If we consider results obtained for 24 channel data, the difference in classification accuracies achieved by LDA and SVM are insignificant for feature set I. From precision and recall results also suggest that both LDA and SVM classifiers have similar results. If we consider results obtained for 8 channel data, the SVM classifier with the feature set I performed better. Precision and recall results also suggest that the SVM classifier gives a better result. In both cases, pinching gestures were not accurately classified compared to other gestures: idle, fist, flexion, and extension gestures. Therefore, a system that utilizes a support vector machine classifier with root mean square, mean frequency, and median frequency as features could be adopted to implement an end-user human-machine interface that utilizes limited gestures. This system might not be very useful for classifying pinching gestures as they have lower precision and recall values, and on average they are below 70%.
+sEMG signals characteristic from different muscle groups and characteristics of a single muscle group of different locations have variations. These results obtained depend on the muscle location where signals are acquired and the signal acquisition device used in the experiment. Therefore, when implementing a real-world end-user system these factors also need to be considered.
+
 
 ## Links
 
