@@ -76,14 +76,37 @@ To find Mel-frequency cepstral coefficients (MFCC), the mfcc function from the l
 
 ## Experiment Setup and Implementation
 ### Signal Acquisition Device
-Our device is inspired by the Backyard Brains’ Muscle SpikerShield device. Muscle SpikerShield has 6 channels of sEMG signal acquisition capability. To use it we have to connect it to an Arduino board. On the other hand, our device has 8 channels, a dedicated 8 channel ADC and a powerful STM32F103 microcontroller. Figure 4 shows the high-level view of our device and Figure 5 shows the circuit diagram for a single channel. \autoref{fig:fig1} and \autoref{fig:fig2} Illustrates the printed circuit board (PCB) layout of our device.  \autoref{fig:fig3} shows our final signal acquisition device and \autoref{fig:elct} shows the 8 channel electrode band.
+Our device is inspired by the Backyard Brains’ Muscle SpikerShield device. Muscle SpikerShield has 6 channels of sEMG signal acquisition capability. To use it we have to connect it to an Arduino board. On the other hand, our device has 8 channels, a dedicated 8 channel ADC and a powerful STM32F103 microcontroller. Figure 3.6 shows the high-level view of our device and Figure 3.7 shows the circuit diagram for a single channel. Figure 3.8 and Figure 3.9 Illustrates the printed circuit board (PCB) layout of our device. Figure 3.10 shows our final signal acquisition device and Figure 3.11 shows the the 8 channel electrode band.
 
-<!-- <img src="images/fe4.JPG" width="400"> -->
+<img src="images/fig3_6.JPG" width="400">
+
+<img src="images/fig3_7.JPG" width="400">
+
+<img src="images/fig3_8.JPG" width="400">
+
+<img src="images/fig3_9.JPG" width="400">
+
+<img src="images/fig3_10.JPG" width="400">
+
+<img src="images/fig3_11.JPG" width="400">
 
 
 ### The Game
+A game similar to the space invader game has been created to demonstrate the project. The device will recognize the gesture, then the gesture will be classified through the machine learning algorithms and then the movement of the spaceship can be changed according to the assigned gesture for each movement. The game has been created using the Pygame library, which is a python library mostly used to build games. To make the game interesting, we have created the game with an environment that is similar to the current pandemic situation. The covid19 viruses come towards the earth and the player has to protect the earth from the virus by shooting it from the spaceship. The spaceship can be moved in all 8 directions using the arrow keys and it can fire using the space key. If the covid19 virus reaches the earth or comes near to the spaceship then the game will be ended. Figure 3.12 shows the interface of our game.
+
+<img src="images/fig3_12.JPG" width="400">
+
 
 ### Real-Time Controlling
+An attempt was made to control the game using the 8 channel signal acquisition device
+developed by us. The first signal acquired by the device was filtered using 5th order
+bandpass filter of range 20 and 700 Hz. Then root mean square, mean frequency, and
+median frequency of the signal were extracted and fed to support vector machine classifiers
+as features to identify the gestures. Figure 3.13 shows our signal acquisition device while
+testing.
+
+<img src="images/fig3_13.JPG" width="400">
+
 
 ## Results and Analysis
 Feature Set I: root mean square, mean frequency, median frequency
