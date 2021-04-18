@@ -128,26 +128,47 @@ sEMG signals characteristic from different muscle groups and characteristics of 
 
 ## References
 [1]  	T. M. M. V. M.A. Cavalcanti Garcia, “Surface electromyography: Why, when and how to use it,” Acta Médica Colomb., vol. 43, no. 2S, p. 176, 2019, doi: 10.36104/amc.2018.1400.
+
 [2]  	M. B. I. Reaz, M. S. Hussain, and F. Mohd-Yasin, “Techniques of EMG signal analysis: Detection, processing, classification and applications,” Biol. Proced. Online, vol. 8, no. 1, pp. 11–35, 2006, doi: 10.1251/bpo115.
+
 [3]  	W. Wei, Y. Wong, Y. Du, Y. Hu, M. Kankanhalli, and W. Geng, “A multi-stream convolutional neural network for sEMG-based gesture recognition in muscle-computer interface,” Pattern Recognit. Lett., vol. 119, pp. 131–138, 2019, doi: 10.1016/j.patrec.2017.12.005.
+
 [4]  	P. Kaczmarek, T. Mánkowski, and J. Tomczýnski, “PutEMG—A surface electromyography hand gesture recognition dataset,” Sensors (Switzerland), vol. 19, no. 16, 2019, doi: 10.3390/s19163548.
+
 [5]  	A. Jaramillo-Yánez, M. E. Benalcázar, and E. Mena-Maldonado, “Real-time hand gesture recognition using surface electromyography and machine learning: A systematic literature review,” Sensors (Switzerland), vol. 20, no. 9, pp. 1–36, 2020, doi: 10.3390/s20092467.
+
 [6]  	M. Atzori et al., “Characterization of a benchmark database for myoelectric movement classification,” IEEE Trans. Neural Syst. Rehabil. Eng., vol. 23, no. 1, pp. 73–83, 2015, doi: 10.1109/TNSRE.2014.2328495.
+
 [7]  	V. H. Cene, M. Tosin, J. Machado, and A. Balbinot, “Open database for accurate upper-limb intent detection using electromyography and reliable extreme learning machines,” Sensors (Switzerland), vol. 19, no. 8, 2019, doi: 10.3390/s19081864.
+
 [8]  	F. Giordaniello et al., “Megane Pro: Myo-electricity, visual and gaze tracking data acquisitions to improve hand prosthetics,” IEEE Int. Conf. Rehabil. Robot., pp. 1148–1153, 2017, doi: 10.1109/ICORR.2017.8009404.
+
 [9]  	Y. Du, W. Jin, W. Wei, Y. Hu, and W. Geng, “Surface EMG-based inter-session gesture recognition enhanced by deep domain adaptation,” Sensors (Switzerland), vol. 17, no. 3, pp. 6–9, 2017, doi: 10.3390/s17030458.
+
 [10]	C. Amma, T. Krings, J. Böer, and T. Schultz, “Advancing muscle-computer interfaces with high-density electromyography,” Conf. Hum. Factors Comput. Syst. - Proc., vol. 2015-April, pp. 929–938, 2015, doi: 10.1145/2702123.2702501.
+
 [11]	M. Paleari, M. Di Girolamo, N. Celadon, A. Favetto, and P. Ariano, “On optimal electrode configuration to estimate hand movements from forearm surface electromyography,” Proc. Annu. Int. Conf. IEEE Eng. Med. Biol. Soc. EMBS, vol. 2015-Novem, pp. 6086–6089, 2015, doi: 10.1109/EMBC.2015.7319780.
+
 [12]	A. Stango, F. Negro, and D. Farina, “Spatial Correlation of High Density EMG Signals Provides Features Robust to Electrode Number and Shift in Pattern Recognition for Myocontrol,” IEEE Trans. Neural Syst. Rehabil. Eng., vol. 23, no. 2, pp. 189–198, Mar. 2015, doi: 10.1109/TNSRE.2014.2366752.
+
 [13]	J. Liu, D. Zhang, X. Sheng, and X. Zhu, “Enhanced robustness of myoelectric pattern recognition to across-day variation through invariant feature extraction,” Proc. Annu. Int. Conf. IEEE Eng. Med. Biol. Soc. EMBS, vol. 2015-Novem, no. 1, pp. 7262–7265, 2015, doi: 10.1109/EMBC.2015.7320068.
+
 [14]	A. C. Tsai, J. J. Luh, and T. Te Lin, “A novel STFT-ranking feature of multi-channel EMG for motion pattern recognition,” Expert Syst. Appl., vol. 42, no. 7, pp. 3327–3341, 2015, doi: 10.1016/j.eswa.2014.11.044.
+
 [15]	P. Kaczmarek, T. Mánkowski, and J. Tomczýnski, “putEMG: sEMG Gesture and Force Recognition Datasets – Biomedical Engineering and Biocybernetics Team.” https://biolab.put.poznan.pl/putemg-dataset/ (accessed Feb. 16, 2021).
+
 [16]	H. A. Yousif et al., “Assessment of Muscles Fatigue Based on Surface EMG Signals Using Machine Learning and Statistical Approaches: A Review,” IOP Conf. Ser. Mater. Sci. Eng., vol. 705, p. 012010, Dec. 2019, doi: 10.1088/1757-899X/705/1/012010.
+
 [17]	M. A. Oskoei and H. Hu, “Support vector machine-based classification scheme for myoelectric control applied to upper limb,” IEEE Trans. Biomed. Eng., vol. 55, no. 8, pp. 1956–1965, 2008, doi: 10.1109/TBME.2008.919734.
+
 [18]	B. Hudgins, P. Parker, and R. N. Scott, “A New Strategy for Multifunction Myoelectric Control,” IEEE Trans. Biomed. Eng., vol. 40, no. 1, pp. 82–94, 1993, doi: 10.1109/10.204774.
+
 [19]	Y. C. Du, C. H. Lin, L. Y. Shyu, and T. Chen, “Portable hand motion classifier for multi-channel surface electromyography recognition using grey relational analysis,” Expert Syst. Appl., vol. 37, no. 6, pp. 4283–4291, 2010, doi: 10.1016/j.eswa.2009.11.072.
+
 [20]	F. Pedregosa et al., “Scikit-learn: Machine learning in Python,” J. Mach. Learn. Res., vol. 12, no. May 2014, pp. 2825–2830, 2011.
+
 [21]	P. Tsinganos, B. Cornelis, J. Cornelis, B. Jansen, and A. Skodras, “Data augmentation of surface electromyography for hand gesture recognition,” Sensors (Switzerland), vol. 20, no. 17, pp. 1–23, 2020, doi: 10.3390/s20174892.
+
 [22]	E. J. Nacpil and K. Nakano, “Driving Simulator Validation of Machine Learning Classification for a Surface Electromyography-Based Steering Assistance Interface,” Adv. Intell. Syst. Comput., vol. 1206 AISC, pp. 143–149, 2021, doi: 10.1007/978-3-030-51064-0_19.
 
 
