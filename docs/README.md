@@ -75,6 +75,15 @@ Other time domain features mean absolute value (MAV), wave-length (WL), variance
 To find Mel-frequency cepstral coefficients (MFCC), the mfcc function from the librosa python library is used. While calculating these features sliding windows size of 2048 and hop length size of 1024 is used. These extracted features were grouped into four separate sets and fed into classifiers separately. The first feature set consists of root mean square, mean frequency, and median frequency. The feature sets II and III were based on previous studies. The second feature set is based on the suggestion made by Hudgins et al. [18] which consists of features mean absolute value, wave-length, zero-crossing, slope sign change. The third feature set consists of integral absolute value, variance, wave-length, zero-crossing, slope sign change, and Willison amplitude was proposed by Du et al. [19]. Finally, feature set IV is made up of MFCC data. Moreover, both preprocessed data and MFCC data were used to train the neural network models.
 
 ## Experiment Setup and Implementation
+### Signal Acquisition Device
+Our device is inspired by the Backyard Brains’ Muscle SpikerShield device. Muscle SpikerShield has 6 channels of sEMG signal acquisition capability. To use it we have to connect it to an Arduino board. On the other hand, our device has 8 channels, a dedicated 8 channel ADC and a powerful STM32F103 microcontroller. Figure 4 shows the high-level view of our device and Figure 5 shows the circuit diagram for a single channel. \autoref{fig:fig1} and \autoref{fig:fig2} Illustrates the printed circuit board (PCB) layout of our device.  \autoref{fig:fig3} shows our final signal acquisition device and \autoref{fig:elct} shows the 8 channel electrode band.
+
+<!-- <img src="images/fe4.JPG" width="400"> -->
+
+
+### The Game
+
+### Real-Time Controlling
 
 ## Results and Analysis
 Feature Set I: root mean square, mean frequency, median frequency
